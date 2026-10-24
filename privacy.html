@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoinCat - 隱私權政策 / Privacy Policy</title>
+    <style>
+        :root {
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-primary: #1e293b;
+            --text-secondary: #64748b;
+            --accent: #2563eb;
+            --accent-hover: #1d4ed8;
+            --border-color: #e2e8f0;
+            --tag-bg: #eff6ff;
+            --tag-text: #1d4ed8;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #0f172a;
+                --card-bg: #1e293b;
+                --text-primary: #f1f5f9;
+                --text-secondary: #94a3b8;
+                --accent: #3b82f6;
+                --accent-hover: #60a5fa;
+                --border-color: #334155;
+                --tag-bg: #1e3a8a;
+                --tag-text: #93c5fd;
+            }
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.7;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 780px;
+            width: 100%;
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--border-color);
+            padding: 48px;
+        }
+
+        @media (max-width: 640px) {
+            body {
+                padding: 16px 12px;
+            }
+            .container {
+                padding: 24px 20px;
+                border-radius: 12px;
+            }
+        }
+
+        .header {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 32px;
+        }
+
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .lang-switch {
+            display: flex;
+            background: var(--bg-color);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 3px;
+        }
+
+        .lang-btn {
+            background: none;
+            border: none;
+            padding: 6px 14px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            border-radius: 6px;
+            color: var(--text-secondary);
+            transition: all 0.2s ease;
+        }
+
+        .lang-btn.active {
+            background-color: var(--card-bg);
+            color: var(--accent);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--text-primary);
+            letter-spacing: -0.02em;
+        }
+
+        .meta {
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: var(--tag-bg);
+            color: var(--tag-text);
+            font-size: 13px;
+            font-weight: 600;
+            padding: 4px 10px;
+            border-radius: 6px;
+            margin-bottom: 8px;
+        }
+
+        section {
+            margin-bottom: 28px;
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        p {
+            color: var(--text-secondary);
+            font-size: 15px;
+            margin-bottom: 12px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 12px 0;
+        }
+
+        li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 8px;
+            font-size: 15px;
+            color: var(--text-secondary);
+        }
+
+        li::before {
+            content: "•";
+            position: absolute;
+            left: 6px;
+            color: var(--accent);
+            font-weight: bold;
+        }
+
+        .highlight-box {
+            background-color: var(--bg-color);
+            border-left: 4px solid var(--accent);
+            padding: 14px 16px;
+            border-radius: 0 8px 8px 0;
+            margin: 16px 0;
+        }
+
+        .highlight-box p {
+            margin: 0;
+            font-size: 14px;
+            color: var(--text-primary);
+            font-weight: 500;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: var(--accent-hover);
+            text-decoration: underline;
+        }
+
+        .footer {
+            margin-top: 40px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            font-size: 13px;
+            color: var(--text-secondary);
+        }
+
+        .content-lang {
+            display: none;
+        }
+
+        .content-lang.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <div class="header-top">
+            <div class="brand">
+                <span>🐱</span> CoinCat
+            </div>
+            <div class="lang-switch">
+                <button class="lang-btn active" id="btn-zh" onclick="setLang('zh')">繁體中文</button>
+                <button class="lang-btn" id="btn-en" onclick="setLang('en')">English</button>
+            </div>
+        </div>
+        <div class="badge">Privacy Policy / 隱私權政策</div>
+        <h1 id="title-text">CoinCat 隱私權政策</h1>
+        <div class="meta" id="update-text">最後更新日期：2026 年 10 月 25 日</div>
+    </div>
+
+    <!-- 繁體中文內容 -->
+    <div id="content-zh" class="content-lang active">
+        <div class="highlight-box">
+            <p>CoinCat 致力於保護您的隱私。我們不收集、不儲存、也不傳輸任何個人身分資料（PII）。您可以完全安心地使用本應用程式。</p>
+        </div>
+
+        <section>
+            <h2>1. 資料收集與使用</h2>
+            <p>CoinCat 是一款專為匯率換算及走勢查詢設計的工具應用程式：</p>
+            <ul>
+                <li><strong>個人資料：</strong>我們不會要求您註冊帳號，也不會收集您的姓名、電話號碼、電子郵件、聯絡人資訊、位置或任何個人可識別資訊。</li>
+                <li><strong>裝置資訊：</strong>我們不追蹤廣告識別碼（IDFA / GAID），不採集裝置指紋，亦無嵌入第三方廣告 SDK 或行銷分析追蹤器。</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>2. 裝置本機儲存 (Local Storage)</h2>
+            <p>為了提供個人化的良好體驗，CoinCat 僅在您的裝置本機端儲存以下偏好設定：</p>
+            <ul>
+                <li>您所自訂的「我的最愛」貨幣組合列表</li>
+                <li>外觀介面主題偏好（淺色模式、深色模式或隨系統）</li>
+                <li>介面語言設定（繁體中文或英文）</li>
+                <li>快取的歷史匯率資料（用於離線瀏覽及加速畫面呈現）</li>
+            </ul>
+            <p>上述資料純粹保存在您的裝置本機儲存空間中，不會上傳至任何伺服器。若您解除安裝應用程式或清除應用程式資料，這些本機設定將一併移除。</p>
+        </section>
+
+        <section>
+            <h2>3. 網路連線與系統權限</h2>
+            <p>本應用程式僅需宣告並使用 <code>INTERNET</code>（網際網路存取）權限，用途為：</p>
+            <ul>
+                <li>向公開的匯率資料提供端發送安全加密（HTTPS）請求，以即時取得最新各國法定貨幣的市場匯率與歷史走勢資料。</li>
+                <li>桌面小工具 (Widget) 依排程或手動重新整理時向伺服器查詢匯率。</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>4. 兒童隱私保護</h2>
+            <p>CoinCat 適合全年齡層使用者使用。我們不會有意向 13 歲（或當地法定成年年齡）以下的兒童收集任何個人資料。由於本應用程式本質上不收集任何個人資料，因此完全符合 COPPA 及相關兒童隱私法規之要求。</p>
+        </section>
+
+        <section>
+            <h2>5. 政策變更</h2>
+            <p>我們可能會不定期更新本隱私權政策。任何修改均會公布於此頁面，並更新頂部的「最後更新日期」。建議您定期查閱以了解最新保護措施。</p>
+        </section>
+
+        <section>
+            <h2>6. 聯絡我們</h2>
+            <p>如果您對本隱私權政策或 CoinCat 有任何疑問、建議或意見，歡迎透過以下電子郵件與我們聯繫：</p>
+            <p><strong>聯絡信箱：</strong> <a href="mailto:contact@hearsilent.app">contact@hearsilent.app</a></p>
+        </section>
+    </div>
+
+    <!-- 英文內容 -->
+    <div id="content-en" class="content-lang">
+        <div class="highlight-box">
+            <p>CoinCat is committed to protecting your privacy. We do not collect, store, or share any of your personally identifiable information (PII). You can use our app with complete peace of mind.</p>
+        </div>
+
+        <section>
+            <h2>1. Information Collection and Use</h2>
+            <p>CoinCat is an exchange rate monitoring and calculation tool designed for convenience:</p>
+            <ul>
+                <li><strong>Personal Data:</strong> We do not require account registration. We do not collect your name, phone number, email address, contacts, location, or any personally identifiable information.</li>
+                <li><strong>Device Information:</strong> We do not track advertising IDs (e.g., IDFA, GAID), collect device fingerprints, or include third-party ad networks or marketing analytics trackers.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>2. Local Device Storage</h2>
+            <p>To provide a tailored user experience, CoinCat stores the following preferences strictly on your local device:</p>
+            <ul>
+                <li>Your customized favorite currency pairs</li>
+                <li>Theme preferences (Light, Dark, or System default)</li>
+                <li>Language preferences (Traditional Chinese or English)</li>
+                <li>Cached exchange rate data (for offline viewing and fast loading)</li>
+            </ul>
+            <p>This data stays entirely on your device and is never transmitted to our or any external servers. Uninstalling the app or clearing app data will remove these local preferences.</p>
+        </section>
+
+        <section>
+            <h2>3. Network Access & Permissions</h2>
+            <p>CoinCat requests and utilizes the <code>INTERNET</code> permission solely to:</p>
+            <ul>
+                <li>Fetch real-time fiat exchange rates and historical price charts from rate providers over secure HTTPS connections.</li>
+                <li>Update home screen widgets on scheduled intervals or on user manual refreshes.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>4. Children's Privacy</h2>
+            <p>CoinCat is suitable for general audiences of all ages. We do not knowingly collect personal information from children under the age of 13 (or applicable age in your jurisdiction). Because our app collects no personal information whatsoever, it is compliant with COPPA and global child privacy regulations.</p>
+        </section>
+
+        <section>
+            <h2>5. Changes to This Privacy Policy</h2>
+            <p>We may update our Privacy Policy from time to time. Any changes will be posted on this page with an updated "Last modified" date. We encourage you to review this policy periodically.</p>
+        </section>
+
+        <section>
+            <h2>6. Contact Us</h2>
+            <p>If you have any questions or suggestions regarding this Privacy Policy or CoinCat, please feel free to reach out to us:</p>
+            <p><strong>Email:</strong> <a href="mailto:contact@hearsilent.app">contact@hearsilent.app</a></p>
+        </section>
+    </div>
+
+    <div class="footer">
+        &copy; 2026 CoinCat. All rights reserved.
+    </div>
+</div>
+
+<script>
+    function setLang(lang) {
+        const isZh = (lang === 'zh');
+        document.getElementById('content-zh').classList.toggle('active', isZh);
+        document.getElementById('content-en').classList.toggle('active', !isZh);
+        document.getElementById('btn-zh').classList.toggle('active', isZh);
+        document.getElementById('btn-en').classList.toggle('active', !isZh);
+        
+        document.getElementById('title-text').innerText = isZh ? 'CoinCat 隱私權政策' : 'CoinCat Privacy Policy';
+        document.getElementById('update-text').innerText = isZh ? '最後更新日期：2026 年 10 月 25 日' : 'Last updated: October 25, 2026';
+        document.documentElement.lang = isZh ? 'zh-Hant' : 'en';
+    }
+
+    // Auto-detect browser language
+    (function() {
+        const userLang = navigator.language || navigator.userLanguage || '';
+        if (!userLang.toLowerCase().startsWith('zh')) {
+            setLang('en');
+        }
+    })();
+</script>
+
+</body>
+</html>
